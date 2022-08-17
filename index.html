@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music</title>
+</head>
+<body>
+  <h1>Welcome to Music with Calvin!</h1>
+
+  {% for artist in music %}
+    <h3>
+      <a href="/music/{{artist.id}}">
+        {{artist.name}}
+      </a>
+    </h3>
+  {% endfor %}
+
+</body>
